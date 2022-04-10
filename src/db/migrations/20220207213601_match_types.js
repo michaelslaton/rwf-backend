@@ -1,7 +1,7 @@
 
  exports.up = function (knex) {
   return knex.schema.createTable("match_types", (table) => {
-    table.increments("match_type_id").primary().unsigned().unique()
+    table.increments("match_type_id").primary()
     table.string("name").notNullable()
     table.timestamps(true, true);
   });
