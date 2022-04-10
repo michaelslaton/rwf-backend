@@ -1,17 +1,19 @@
 exports.seed = function (knex) {
   return knex("match_log").insert([
     {
-      match_id: 1,
-      wrestler_id: 1,
+      wrestler_1: 1,
+      wrestler_2: 2,
       match_type_id: 1,
       belt_id: 1,
-      winner: true,
+      winner: 1,
+      date: "2022-3-19"
     },
     {
-      match_id: 1,
-      wrestler_id: 2,
-      match_type_id: 1,
-      belt_id: 1,
+      team_1: 2,
+      team_2: 1,
+      match_type_id: 2,
+      winner: 3,
+      date: "2022-3-19"
     }
   ]);
 };

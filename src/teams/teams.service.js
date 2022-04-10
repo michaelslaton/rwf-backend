@@ -10,7 +10,7 @@ function createTeam(newTeam){
 function listTeams(){
   return knex("teams")
     .select("*")
-    .orderBy("team_id");
+    .orderBy("name");
 }
 
 function readTeam(team_id){

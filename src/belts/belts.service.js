@@ -10,7 +10,7 @@ function createBelt(newBelt){
 function listBelts(){
   return knex("belts")
   .select("*")
-  .orderBy("belt_id");
+  .orderBy("title");
 }
 
 function readBelt(belt_id){
